@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  testsapi:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/tests
+    ports:
+      - "8000:8000"
